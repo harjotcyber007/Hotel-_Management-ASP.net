@@ -1,0 +1,298 @@
+﻿
+<%@ Master Language="C#" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+    <link rel='stylesheet' href='wp-content/plugins/automotive/css/chosen0235.css?ver=4.1.1' type='text/css' media='all' />
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C800%2C400italic&amp;ver=4.1.1' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/plugins/automotive/css/font-awesome.min0235.css?ver=4.1.1' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/plugins/automotive/css/jquery-ui0235.css?ver=4.1.1' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/plugins/automotive/css/jquery.bxslider0235.css?ver=4.1.1' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/plugins/automotive/css/bootstrap.min0235.css?ver=4.1.1' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/plugins/automotive/css/animate.min0235.css?ver=4.1.1' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/plugins/js_composer/assets/lib/flexslider/flexslider8f76.css?ver=4.3.5' type='text/css' media='screen' />
+    <link rel='stylesheet' href='wp-content/plugins/automotive/css/jquery.selectbox0235.css?ver=4.1.1' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/plugins/automotive/css/listing_style0235.css?ver=4.1.1' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/plugins/automotive/css/mobile0235.css?ver=4.1.1' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/plugins/automotive/css/jquery.fancybox0235.css?ver=4.1.1' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/plugins/automotive/css/shortcodes0235.css?ver=4.1.1' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/plugins/automotive/css/ts0235.css?ver=4.1.1' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/plugins/revslider/rs-plugin/css/settings7b8b.css?rev=4.5.95&amp;ver=4.1.1' type='text/css' media='all' />
+    <style id='rs-plugin-settings-inline-css' type='text/css'>
+    .tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}
+    </style>
+    <link rel='stylesheet' href='wp-content/plugins/woocommerce/assets/css/woocommerce-layout8ce6.css?ver=2.2.10' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen8ce6.css?ver=2.2.10' type='text/css' media='only screen and (max-width: 768px)' />
+    <link rel='stylesheet' href='wp-content/plugins/woocommerce/assets/css/woocommerce8ce6.css?ver=2.2.10' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/themes/automotive-wp/css/jquery.fancybox4963.css?ver=1.1' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/themes/automotive-wp/css/jquery.selectbox4963.css?ver=1.1' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/themes/automotive-wp/css/style4963.css?ver=1.1' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/themes/automotive-wp/css/mobile4963.css?ver=1.1' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/themes/automotive-wp/css/settings4963.css?ver=1.1' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/themes/automotive-wp/css/wp4963.css?ver=1.1' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/plugins/automotive/css/social-likes0235.css?ver=4.1.1' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/themes/automotive-wp/css/custom_style0235.css?ver=4.1.1' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/plugins/js_composer/assets/css/js_composer8f76.css?ver=4.3.5' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/uploads/js_composer/custom8f76.css?ver=4.3.5' type='text/css' media='screen' />
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800%2C300italic%2C400italic%2C600italic%2C700italic%2C800italic%7CYellowtail%3A400&amp;ver=1414438036' type='text/css' media='all' />
+    <script type='text/javascript' src='wp-includes/js/jquery/jquery90f9.js?ver=1.11.1'></script>
+    <script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min1576.js?ver=1.2.1'></script>
+    <script type='text/javascript' src='wp-content/plugins/automotive/js/jquery-ui-1.10.3.custom.min0235.js?ver=4.1.1'></script>
+    <script type='text/javascript' src='wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.tools.min7b8b.js?rev=4.5.95&amp;ver=4.1.1'></script>
+    <script type='text/javascript' src='wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.min7b8b.js?rev=4.5.95&amp;ver=4.1.1'></script>
+</head>
+<body class="home page page-id-707 page-template-default unknown wpb-js-composer js-comp-ver-4.3.5 vc_responsive">
+<form id="form1" runat="server">
+    <header data-spy="affix" data-offset-top="1" class="clearfix">
+        <section class="toolbar">
+            <div class="container"><div class="row">
+                <div class="col-lg-6 left_bar"><ul class="left-none">
+                    <li><a href="login.aspx"><i class="fa fa-user"></i> Login</a></li>
+                      <li><a href="user login.aspx"><i class="fa fa-user"></i> User Login</a></li>
+                        <li><a href="user registration.aspx"><i class="fa fa-user"></i>New Regsitartion </a></li>
+                    <li><a href="About.aspx" ><i class="fa fa-user"></i>About</a></li>
+                    <li><a href="Feedback Form.aspx"><i class="fa fa-user"></i> Contact</a></li>
+                    <%--<li><a href="#"><i class="fa fa-shopping-cart"></i> Cart</a><ul class='cart_dropdown'><li>0 items, Total of <span class="amount">&#36;0.00</span> <span class='padding-horizontal-5'>|</span> <a href='indexf74a.html?page_id=944'>Checkout</a></li></ul></li>--%>                    
+                </ul></div>
+                <div class="col-lg-6 "><ul class="right-none pull-right company_info">
+                    <li><a href="tel:1-800-567-0123"><i class="fa fa-phone"></i> +91 xxxxx xxxxx</a></li>
+                    <li class="address"><a href="#"><i class="fa fa-map-marker"></i> GT Road, Amritsar, Punjab.</a></li>
+                </ul></div>
+            </div></div>
+            <div class="toolbar_shadow"></div>
+        </section>
+        <div class="bottom-header" >
+            <div class="container"><nav class="navbar navbar-default" role="navigation"><div class="container-fluid"> 
+                <div class="navbar-header"><a class="navbar-brand" href=""><span class="logo"><span class="primary_text">Grand Paradise</span><span class="secondary_text">Hotel</span></span></a></div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><div class="menu-main-menu-container"><ul id="menu-main-menu" class="nav navbar-nav pull-right">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-707 menu-item-833"><a title="" href="index.aspx">Home</a></li>
+                    <%--<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-814 dropdown">
+                        <a title="" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Pages <b class="caret"></b></a>
+                        <ul role="menu" class=" dropdown-menu">
+	                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-827"><a title="" href="">Alternate Footer</a></li>
+	                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-835"><a title="" href="">404</a></li>
+	                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-834"><a title="" href="">About Us</a></li>
+	                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-836"><a title="" href="">FAQ</a></li>
+	                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-837"><a title="" href="">Fullwidth Page</a></li>
+	                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-839"><a title="" href="">Sidebar Page</a></li>
+	                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-838"><a title="" href="">Pricing Tables</a></li>
+                        </ul>
+                    </li>--%>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-841"><a title="" href="About.aspx">About</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-841"><a title="" href="rooms.aspx">Accomodation</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-947"><a title="" href="Restraunts.aspx">Resturants</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-840"><a title="" href="Package.aspx">Package</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-841"><a title="" href="Feedback Form.aspx">Contact</a></li>
+                   
+                </ul></div></div>
+            </div></nav></div><a href="index.aspx">index.aspx</a>
+            <div class="header_shadow"></div>
+        </div>
+    </header>
+    <div class="clearfix"></div>
+    <div class="rev_slider_wrapper fullwidthbanner-container" style="margin:0px auto;background-color:#E9E9E9;padding:0px;margin-top:0px;margin-bottom:0px;max-height:625px;">
+	<div id="rev_slider_1_1" class="rev_slider fullwidthabanner" style="display:none;max-height:625px;height:625px;">
+        <ul>	
+	       <li data-transition="random" data-slotamount="7" data-masterspeed="200"  data-saveperformance="off" ><img src="slider/1.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"></li>
+	       <li data-transition="random" data-slotamount="7" data-masterspeed="200"  data-saveperformance="off" ><img src="slider/2.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"></li>
+           <li data-transition="random" data-slotamount="7" data-masterspeed="200"  data-saveperformance="off" ><img src="slider/3.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"></li>
+           <li data-transition="random" data-slotamount="7" data-masterspeed="200"  data-saveperformance="off" ><img src="slider/4.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"></li>
+           <li data-transition="random" data-slotamount="7" data-masterspeed="200"  data-saveperformance="off" ><img src="slider/5.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"></li>
+           <li data-transition="random" data-slotamount="7" data-masterspeed="200"  data-saveperformance="off" ><img src="slider/6.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"></li>
+	       <li data-transition="random" data-slotamount="7" data-masterspeed="200"  data-saveperformance="off" ><img src="slider/7.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"></li>
+          
+        </ul>
+        <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	
+    </div></div>
+	<script type="text/javascript">
+		var setREVStartSize = function () {
+			var tpopt = new Object();
+			tpopt.startwidth = 1170;
+			tpopt.startheight = 625;
+			tpopt.container = jQuery('#rev_slider_1_1');
+			tpopt.fullScreen = "off";
+			tpopt.forceFullWidth = "off";
+			tpopt.container.closest(".rev_slider_wrapper").css({ height: tpopt.container.height() }); tpopt.width = parseInt(tpopt.container.width(), 0); tpopt.height = parseInt(tpopt.container.height(), 0); tpopt.bw = tpopt.width / tpopt.startwidth; tpopt.bh = tpopt.height / tpopt.startheight; if (tpopt.bh > tpopt.bw) tpopt.bh = tpopt.bw; if (tpopt.bh < tpopt.bw) tpopt.bw = tpopt.bh; if (tpopt.bw < tpopt.bh) tpopt.bh = tpopt.bw; if (tpopt.bh > 1) { tpopt.bw = 1; tpopt.bh = 1 } if (tpopt.bw > 1) { tpopt.bw = 1; tpopt.bh = 1 } tpopt.height = Math.round(tpopt.startheight * (tpopt.width / tpopt.startwidth)); if (tpopt.height > tpopt.startheight && tpopt.autoHeight != "on") tpopt.height = tpopt.startheight; if (tpopt.fullScreen == "on") { tpopt.height = tpopt.bw * tpopt.startheight; var cow = tpopt.container.parent().width(); var coh = jQuery(window).height(); if (tpopt.fullScreenOffsetContainer != undefined) { try { var offcontainers = tpopt.fullScreenOffsetContainer.split(","); jQuery.each(offcontainers, function (e, t) { coh = coh - jQuery(t).outerHeight(true); if (coh < tpopt.minFullScreenHeight) coh = tpopt.minFullScreenHeight }) } catch (e) { } } tpopt.container.parent().height(coh); tpopt.container.height(coh); tpopt.container.closest(".rev_slider_wrapper").height(coh); tpopt.container.closest(".forcefullwidth_wrapper_tp_banner").find(".tp-fullwidth-forcer").height(coh); tpopt.container.css({ height: "100%" }); tpopt.height = coh; } else { tpopt.container.height(tpopt.height); tpopt.container.closest(".rev_slider_wrapper").height(tpopt.height); tpopt.container.closest(".forcefullwidth_wrapper_tp_banner").find(".tp-fullwidth-forcer").height(tpopt.height); }
+		};			    
+		setREVStartSize();
+		var tpj = jQuery;
+		tpj.noConflict();
+		var revapi1;
+		tpj(document).ready(function () {
+			if (tpj('#rev_slider_1_1').revolution == undefined)
+			    revslider_showDoubleJqueryError('#rev_slider_1_1');
+			else
+			    revapi1 = tpj('#rev_slider_1_1').show().revolution(
+			{
+				dottedOverlay: "none",
+				delay: 10000,
+				startwidth: 1170,
+				startheight: 625,
+				hideThumbs: 200,
+				thumbWidth: 100,
+				thumbHeight: 50,
+				thumbAmount: 5,
+				navigationType: "none",
+				navigationArrows: "solo",
+				navigationStyle: "round",
+				touchenabled: "on",
+				onHoverStop: "on",
+				swipe_velocity: 0.7,
+				swipe_min_touches: 1,
+				swipe_max_touches: 1,
+				drag_block_vertical: false,
+				keyboardNavigation: "off",
+				navigationHAlign: "center",
+				navigationVAlign: "bottom",
+				navigationHOffset: 0,
+				navigationVOffset: 20,
+				soloArrowLeftHalign: "left",
+				soloArrowLeftValign: "center",
+				soloArrowLeftHOffset: 20,
+				soloArrowLeftVOffset: 0,
+				soloArrowRightHalign: "right",
+				soloArrowRightValign: "center",
+				soloArrowRightHOffset: 20,
+				soloArrowRightVOffset: 0,
+				shadow: 0,
+				fullWidth: "on",
+				fullScreen: "off",
+				spinner: "spinner0",
+				stopLoop: "off",
+				stopAfterLoops: -1,
+				stopAtSlide: -1,
+				shuffle: "off",
+				autoHeight: "off",
+				forceFullWidth: "off",
+				hideTimerBar: "on",
+				hideThumbsOnMobile: "off",
+				hideNavDelayOnMobile: 1500,
+				hideBulletsOnMobile: "off",
+				hideArrowsOnMobile: "off",
+				hideThumbsUnderResolution: 0,
+                hideSliderAtLimit: 0,
+				hideCaptionAtLimit: 0,
+				hideAllCaptionAtLilmit: 0,
+				startWithSlide: 0
+			});
+		});
+	</script>
+	<section class="message-wrap">
+    	<div class="container"><div class="row">
+    		<h2 class="col-lg-9 col-md-8 col-sm-12 col-xs-12 xs-padding-left-15">A Place Where You Feel Like <span class="alternate-font">Heaven</span></h2>
+    		<div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 xs-padding-right-15"> <a href="rooms.aspx" class="default-btn pull-right action_button">Book Room Now</a> </div>
+    	</div></div>
+    	<div class="message-shadow"></div>
+    </section>
+  <%--<section class="content"><div class="container"><div class="inner-page row wp_page is_sidebar"><div id="post-707" class="post-707 page type-page status-publish hentry col-lg-12 col-md-12 col-sm-12 col-xs-12 page-content post-entry">--%>
+      `<div> <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder></div> 
+   <%--</div></div></div><%--</section>--%>
+    <div class="clearfix"></div>
+
+    <section class="copyright-wrap footer_area"><div class="container"><div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="logo-footer"><a href=""><h1>GRAND PARADISE</h1><span>HOTEL</span></a></div>
+          
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+            <ul class="social clearfix">
+                <li><a class="facebook" href="#"></a></li>
+                <li><a class="twitter" href="#"></a></li>
+                <li><a class="youtube" href="#"></a></li>
+                <li><a class="linkedin" href="#"></a></li>
+                <li><a class="skype" href="#"></a></li>
+                <li><a class="google" href="#"></a></li>
+                <li><a class="pinterest" href="#"></a></li>
+            </ul>
+            <div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="f-nav">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-707  menu-item-825"><a href="Default.aspx">Home</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-823"><a href="About.aspx">About</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-826"><a href="Accomodation.aspx">Accomodation</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-829"><a href="Resturants.aspx">Resturants</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-831"><a href="Package.aspx">Package</a></li>      
+                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-831"><a href="spa.aspx">Spa</a></li>            
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-831"><a href="Check Booking.aspx">Check Booking</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-830"><a href="user login.aspx">User Login</a></li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-830"><a href="Login.aspx">Admin</a></li>
+            </ul></div>                        
+        </div>
+    </div></div></section>
+    <div class="back_to_top"><img src="wp-content/themes/automotive-wp/images/arrow-up.png" alt="Back to top" /></div>
+	<script type="text/javascript">
+		(function ($) {
+			"use strict";
+			jQuery(document).ready(function ($) {
+			});
+		})(jQuery);
+    </script>
+    <style type="text/css">.tp-caption.white_thick{color:#FFF;text-decoration:none;background-color:rgba(0,0,0,0);line-height:40px;margin:0px;padding:0px 0px 0px 0px;letter-spacing:-6px;font-size:72px;font-weight:800;font-family:"Open Sans";border-width:0px;border-color:rgb(255,255,255);border-style:none}.tp-caption.lightblue_thin{font-weight:normal;font-family:"Open Sans";color:#ACD6F0;font-size:55px;line-height:24px;background-color:transparent;letter-spacing:-3px;text-decoration:none;border-width:0px;border-color:rgb(172,214,240);border-style:none}.tp-caption.white_border_top{letter-spacing:-2px;line-height:24px;font-size:30px;color:#FFF;font-family:"Open Sans";font-weight:400;background-color:transparent;text-decoration:none;padding:16px 0px 0px;border-width:2px 0px 0px 0px;border-color:rgb(172,214,240) rgb(255,255,255) rgb(255,255,255) rgb(255,255,255);border-style:solid none none none}.tp-caption.blue_cursive{font-weight:500;font-size:70px;color:#ACD6F0;font-family:"Yellowtail",cursive;line-height:24px;background-color:transparent;text-decoration:none;padding:0px 5px;border-width:0px;border-color:rgb(172,214,240);border-style:none}.tp-caption.white_border_bottom{font-family:"Open Sans";font-weight:400;font-size:30px;color:#FFF;padding:0px 0px 16px;line-height:24px;letter-spacing:-2px;border-width:0px 0px 2px 0px;border-color:rgb(255,255,255) rgb(255,255,255) rgb(172,214,240) rgb(255,255,255);border-style:none none solid none}.tp-caption.brown_background{background-color:#FFEAB3;font-size:48px;color:#6A4123;line-height:40px;letter-spacing:-3px;padding:5px;font-weight:300;font-family:"Open Sans";border-width:0px;border-color:rgb(106,65,35);border-style:none}.tp-caption.white_medium{color:#FFF;font-size:46px;font-weight:800;font-family:"Open Sans";line-height:40px;letter-spacing:-3px;border-width:0px;border-color:rgb(255,255,255);border-style:none}.tp-caption.light_brown_thin{font-size:46px;font-weight:800;font-family:"Open Sans";color:#FFEAB3;letter-spacing:-6px;line-height:40px;border-width:0px;border-color:rgb(255,234,179);border-style:none}.tp-caption.brown_thick{font-size:46px;font-weight:800;font-family:"Open Sans";letter-spacing:-6px;color:#6A4123;line-height:40px;border-width:0px;border-color:rgb(106,65,35);border-style:none}.tp-caption.brown_thin{font-size:65px;font-weight:300;font-family:"Open Sans";letter-spacing:-2px;color:#6A4123;font-style:italic;padding-right:10px;line-height:40px;border-width:0px;border-color:rgb(106,65,35);border-style:none}.tp-caption.green_thin{color:#B7CD56;font-size:48px;letter-spacing:-4px;line-height:24px;border-width:0px;border-color:rgb(183,205,86);border-style:none}.tp-caption.red_thin{font-size:75px;font-weight:200;letter-spacing:-6px;color:#C7081B;line-height:24px;border-width:0px;border-color:rgb(199,8,27);border-style:none}.tp-caption.white_thin{font-size:72px;font-weight:200;letter-spacing:-6px;color:#FFF;line-height:24px;border-width:0px;border-color:rgb(255,255,255);border-style:none}.tp-caption.pale_green_cursive{font-size:122px;letter-spacing:-6px;color:#CBE2D2;font-family:"Yellowtail",cursive;padding-right:20px;line-height:24px;border-width:0px;border-color:rgb(203,226,210);border-style:none}.tp-caption.dark_blue_thin{color:#042B5A;font-size:75px;font-weight:200;background-color:transparent;text-decoration:none;line-height:24px;border-width:0px;border-color:rgb(4,43,90);border-style:none}.tp-caption.white_thin_smaller{font-size:65px;font-weight:200;letter-spacing:-5px;color:#FFF;line-height:24px;background-color:transparent;text-decoration:none;border-width:0px;border-color:rgb(255,255,255);border-style:none}.white_thick{color:#FFF;text-decoration:none;background-color:rgba(0,0,0,0);line-height:40px;margin:0px;padding:0px 0px 0px 0px;letter-spacing:-6px;font-size:72px;font-weight:800;font-family:"Open Sans";border-width:0px;border-color:rgb(255,255,255);border-style:none}.lightblue_thin{font-weight:normal;font-family:"Open Sans";color:#ACD6F0;font-size:55px;line-height:24px;background-color:transparent;letter-spacing:-3px;text-decoration:none;border-width:0px;border-color:rgb(172,214,240);border-style:none}.white_border_top{letter-spacing:-2px;line-height:24px;font-size:30px;color:#FFF;font-family:"Open Sans";font-weight:400;background-color:transparent;text-decoration:none;padding:16px 0px 0px;border-width:2px 0px 0px 0px;border-color:rgb(172,214,240) rgb(255,255,255) rgb(255,255,255) rgb(255,255,255);border-style:solid none none none}.blue_cursive{font-weight:500;font-size:70px;color:#ACD6F0;font-family:"Yellowtail",cursive;line-height:24px;background-color:transparent;text-decoration:none;padding:0px 5px;border-width:0px;border-color:rgb(172,214,240);border-style:none}.white_border_bottom{font-family:"Open Sans";font-weight:400;font-size:30px;color:#FFF;padding:0px 0px 16px;line-height:24px;letter-spacing:-2px;border-width:0px 0px 2px 0px;border-color:rgb(255,255,255) rgb(255,255,255) rgb(172,214,240) rgb(255,255,255);border-style:none none solid none}.brown_background{background-color:#FFEAB3;font-size:48px;color:#6A4123;line-height:40px;letter-spacing:-3px;padding:5px;font-weight:300;font-family:"Open Sans";border-width:0px;border-color:rgb(106,65,35);border-style:none}.white_medium{color:#FFF;font-size:46px;font-weight:800;font-family:"Open Sans";line-height:40px;letter-spacing:-3px;border-width:0px;border-color:rgb(255,255,255);border-style:none}.light_brown_thin{font-size:46px;font-weight:800;font-family:"Open Sans";color:#FFEAB3;letter-spacing:-6px;line-height:40px;border-width:0px;border-color:rgb(255,234,179);border-style:none}.brown_thick{font-size:46px;font-weight:800;font-family:"Open Sans";letter-spacing:-6px;color:#6A4123;line-height:40px;border-width:0px;border-color:rgb(106,65,35);border-style:none}.brown_thin{font-size:65px;font-weight:300;font-family:"Open Sans";letter-spacing:-2px;color:#6A4123;font-style:italic;padding-right:10px;line-height:40px;border-width:0px;border-color:rgb(106,65,35);border-style:none}.green_thin{color:#B7CD56;font-size:48px;letter-spacing:-4px;line-height:24px;border-width:0px;border-color:rgb(183,205,86);border-style:none}.red_thin{font-size:75px;font-weight:200;letter-spacing:-6px;color:#C7081B;line-height:24px;border-width:0px;border-color:rgb(199,8,27);border-style:none}.white_thin{font-size:72px;font-weight:200;letter-spacing:-6px;color:#FFF;line-height:24px;border-width:0px;border-color:rgb(255,255,255);border-style:none}.pale_green_cursive{font-size:122px;letter-spacing:-6px;color:#CBE2D2;font-family:"Yellowtail",cursive;padding-right:20px;line-height:24px;border-width:0px;border-color:rgb(203,226,210);border-style:none}.dark_blue_thin{color:#042B5A;font-size:75px;font-weight:200;background-color:transparent;text-decoration:none;line-height:24px;border-width:0px;border-color:rgb(4,43,90);border-style:none}.white_thin_smaller{font-size:65px;font-weight:200;letter-spacing:-5px;color:#FFF;line-height:24px;background-color:transparent;text-decoration:none;border-width:0px;border-color:rgb(255,255,255);border-style:none}</style>
+    <script type='text/javascript'>
+    /* <![CDATA[ */
+    var listing_ajax = {"ajaxurl":"http:\/\/demo.themesuite.com\/automotive-wp\/wp-admin\/admin-ajax.php","current_url":"http:\/\/demo.themesuite.com\/automotive-wp\/","permalink_set":"false","compare":"http:\/\/demo.themesuite.com\/automotive-wp\/?page_id=473","recaptcha_public":"6Ld5necSAAAAAMNoodwSDBwEWAQi3Yd3VHHSsZnr","template_url":"http:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/themes\/automotive-wp","singular_vehicles":"Vehicle","plural_vehicles":"Vehicles","compare_vehicles":"Compare","currency_symbol":"$","currency_separator":","};
+    /* ]]> */
+    </script>
+    <script type='text/javascript' src='wp-content/plugins/automotive/js/listing0235.js?ver=4.1.1'></script>
+    <script type='text/javascript' src='wp-content/plugins/automotive/js/chosen.jquery.min0235.js?ver=4.1.1'></script>
+    <script type='text/javascript' src='wp-content/plugins/automotive/js/jquery.cookie0235.js?ver=4.1.1'></script>
+    <script type='text/javascript' src='wp-content/plugins/automotive/js/bootstrap0235.js?ver=4.1.1'></script>
+    <script type='text/javascript' src='wp-content/plugins/automotive/js/jquery.selectbox-0.20235.js?ver=4.1.1'></script>
+    <script type='text/javascript' src='wp-content/plugins/automotive/js/jquery.bxslider.min0235.js?ver=4.1.1'></script>
+    <script type='text/javascript' src='wp-content/plugins/automotive/js/jquery.inview.min0235.js?ver=4.1.1'></script>
+    <script type='text/javascript' src='../../www.google.com/recaptcha/api0235.js?ver=4.1.1'></script>
+    <script type='text/javascript' src='wp-includes/js/jquery/ui/core.min4a80.js?ver=1.11.2'></script>
+    <script type='text/javascript' src='wp-includes/js/jquery/ui/widget.min4a80.js?ver=1.11.2'></script>
+    <script type='text/javascript' src='wp-includes/js/jquery/ui/mouse.min4a80.js?ver=1.11.2'></script>
+    <script type='text/javascript' src='wp-includes/js/jquery/ui/sortable.min4a80.js?ver=1.11.2'></script>
+    <script type='text/javascript'>
+    /* <![CDATA[ */
+    var wc_add_to_cart_params = {"ajax_url":"\/automotive-wp\/wp-admin\/admin-ajax.php","ajax_loader_url":"\/\/demo.themesuite.com\/automotive-wp\/wp-content\/plugins\/woocommerce\/assets\/images\/ajax-loader@2x.gif","i18n_view_cart":"View Cart","cart_url":"http:\/\/demo.themesuite.com\/automotive-wp\/?page_id=944","is_cart":"","cart_redirect_after_add":"no"};
+    var wc_add_to_cart_params = {"ajax_url":"\/automotive-wp\/wp-admin\/admin-ajax.php","ajax_loader_url":"\/\/demo.themesuite.com\/automotive-wp\/wp-content\/plugins\/woocommerce\/assets\/images\/ajax-loader@2x.gif","i18n_view_cart":"View Cart","cart_url":"http:\/\/demo.themesuite.com\/automotive-wp\/?page_id=944","is_cart":"","cart_redirect_after_add":"no"};
+    /* ]]> */
+    </script>
+    <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min8ce6.js?ver=2.2.10'></script>
+    <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.minc8cb.js?ver=2.60'></script>
+    <script type='text/javascript'>
+    /* <![CDATA[ */
+    var woocommerce_params = {"ajax_url":"\/automotive-wp\/wp-admin\/admin-ajax.php","ajax_loader_url":"\/\/demo.themesuite.com\/automotive-wp\/wp-content\/plugins\/woocommerce\/assets\/images\/ajax-loader@2x.gif"};
+    var woocommerce_params = {"ajax_url":"\/automotive-wp\/wp-admin\/admin-ajax.php","ajax_loader_url":"\/\/demo.themesuite.com\/automotive-wp\/wp-content\/plugins\/woocommerce\/assets\/images\/ajax-loader@2x.gif"};
+    /* ]]> */
+    </script>
+    <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min8ce6.js?ver=2.2.10'></script>
+    <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.mine7f0.js?ver=1.3.1'></script>
+    <script type='text/javascript'>
+    /* <![CDATA[ */
+    var wc_cart_fragments_params = {"ajax_url":"\/automotive-wp\/wp-admin\/admin-ajax.php","fragment_name":"wc_fragments"};
+    var wc_cart_fragments_params = {"ajax_url":"\/automotive-wp\/wp-admin\/admin-ajax.php","fragment_name":"wc_fragments"};
+    /* ]]> */
+    </script>
+    <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min8ce6.js?ver=2.2.10'></script>
+    <script type='text/javascript' src='wp-content/themes/automotive-wp/js/retina8a54.js?ver=1.0.0'></script>
+    <script type='text/javascript'>
+    /* <![CDATA[ */
+    var ajax_variables = {"ajaxurl":"http:\/\/demo.themesuite.com\/automotive-wp\/wp-admin\/admin-ajax.php","template_url":"http:\/\/demo.themesuite.com\/automotive-wp\/wp-content\/themes\/automotive-wp"};
+    /* ]]> */
+    </script>
+    <script type='text/javascript' src='wp-content/themes/automotive-wp/js/main8a54.js?ver=1.0.0'></script>
+    <script type='text/javascript' src='wp-content/plugins/automotive/js/jquery.fancybox0235.js?ver=4.1.1'></script>
+    <script type='text/javascript' src='wp-content/themes/automotive-wp/js/jquery.flexslider8a54.js?ver=1.0.0'></script>
+    <script type='text/javascript' src='wp-content/themes/automotive-wp/js/jquery.mousewheel8a54.js?ver=1.0.0'></script>
+    <script type='text/javascript' src='wp-content/themes/automotive-wp/js/jquery.easing8a54.js?ver=1.0.0'></script>
+    <script type='text/javascript' src='wp-content/themes/automotive-wp/js/social-likes.min8a54.js?ver=1.0.0'></script>
+    <script type='text/javascript' src='wp-includes/js/comment-reply.min0235.js?ver=4.1.1'></script>
+    <script type='text/javascript' src='wp-content/plugins/js_composer/assets/js/js_composer_front8f76.js?ver=4.3.5'></script>
+    <script type='text/javascript' src='wp-content/plugins/automotive/js/jquery.parallax0235.js?ver=4.1.1'></script>
+    <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key&amp;sensor=false&amp;ver=4.1.1'></script>
+    <script type='text/javascript' src='wp-content/plugins/automotive/js/twitter/twitter_feed8a54.js?ver=1.0.0'></script>
+    <script type='text/javascript' src='wp-content/plugins/automotive/js/twitter/jquery.tweet8a54.js?ver=1.0.0'></script>
+</body>
+</form>
+</body>
+</html>
